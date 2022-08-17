@@ -1,0 +1,40 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+@use "../utils/mixins";
+
+.our-clients {
+  padding: 0px;
+  margin: 94px 0px;
+  &__header {
+    @include mixins.font-sizes(700, 36, 1.17);
+    color: colors.$almost-black-font-color;
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__elem {
+    width: 170px;
+    height: 92px;
+    border: rgba(175, 177, 184, 1) 1px solid;
+    border-radius: 4px;
+    fill: colors.$our-team-social-link-fill;
+    &:hover {
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      fill: colors.$brand-blue-color;
+      border: colors.$brand-blue-color 1px solid;
+    }
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg {
+    width: 106px;
+    height: 60px;
+  }
+}
