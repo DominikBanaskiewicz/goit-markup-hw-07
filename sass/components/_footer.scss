@@ -2,7 +2,9 @@
 @use "../utils/fonts";
 @use "./paddings.scss";
 @use "../utils/mixins";
-
+.section--padding60px {
+  padding: 60px 0px;
+}
 .footer {
   background-color: colors.$background-dark-color;
   @include mixins.font-sizes(400, 14, 1.7);

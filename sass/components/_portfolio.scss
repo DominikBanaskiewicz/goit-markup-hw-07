@@ -53,9 +53,9 @@
   }
 }
 .portfolio-item__text {
-  border-bottom: 1px solid colors.$white-color;
-  border-left: 1px solid colors.$white-color;
-  border-right: 1px solid colors.$white-color;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
   padding: 20px 24px;
 }
 .portfolio-item__name {
@@ -68,7 +68,7 @@
   color: colors.$almost-black-font-color;
 }
 .portfolio-item__type {
-  @include mixins.font-sizes(400, 16, 1.875);
+  @include mixins.font-sizes(400, 16, 1.2);
   text-decoration: none;
   color: colors.$grey-brand-font-color;
 }
@@ -88,7 +88,7 @@
 
   width: 100%;
   height: 100%;
-  background-color: colors.$brand-blue-color;
+  background-color: rgba(33, 150, 243, 0.9);
 
   transform: translatey(100%);
   transition: transform 250ms ease;
