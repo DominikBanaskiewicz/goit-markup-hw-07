@@ -14,7 +14,7 @@
   }
 }
 .banner__text {
-  @include mixins.font-sizes(500, 44, 1.36);
+  @include mixins.font-sizes(900, 44, 1.36);
   color: colors.$white-color;
   width: 696px;
   text-align: center;
