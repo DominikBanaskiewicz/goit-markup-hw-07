@@ -112,21 +112,21 @@
     &:hover {
       cursor: pointer;
     }
-  }
-  &__button-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-  }
-  &__button-svg {
-    fill: colors.$almost-white-color;
-    width: auto;
-    height: 20px;
-  }
-  &__button-text {
-    @include mixins.font-sizes(700, 16, 1.875);
-    color: colors.$white-color;
-    letter-spacing: 2px;
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+    &-svg {
+      fill: colors.$almost-white-color;
+      width: auto;
+      height: 20px;
+    }
+    &-text {
+      @include mixins.font-sizes(700, 16, 1.875);
+      color: colors.$white-color;
+      letter-spacing: 2px;
+    }
   }
 }
